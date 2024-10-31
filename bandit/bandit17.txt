@@ -1,0 +1,14 @@
+Bandit Nivel 17 → Nivel 18
+SSH: ssh -i sshkey.private bandit17@localhost
+
+Explicación: Abre sesión SSH con el usuario bandit17 usando una clave privada.
+
+Solución:
+
+$ diff passwords.old passwords.new
+
+Explicación: diff compara las diferencias entre los archivos passwords.old y passwords.new.
+
+$ grep kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd passwords.new
+
+Explicación: grep busca la contraseña específica en passwords.new.

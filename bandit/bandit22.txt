@@ -1,0 +1,38 @@
+Bandit Nivel 22 → Nivel 23
+SSH: ssh -o PubkeyAuthentication=no -p2220 bandit22@bandit.labs.overthewire.org
+
+Explicación: Abre sesión SSH con el usuario bandit22.
+
+Solución:
+
+$ cd /etc/cron.d/
+
+Explicación: cd cambia al directorio /etc/cron.d/.
+
+$ ls -l
+
+Explicación: ls -l lista archivos en el directorio actual con detalles.
+
+$ cat cronjob_bandit23
+
+Explicación: cat muestra el contenido del archivo cronjob_bandit23.
+
+$ cat /usr/bin/cronjob_bandit23.sh
+
+Explicación: cat muestra el contenido del script cronjob_bandit23.sh.
+
+$ myname=bandit23
+
+Explicación: Asigna bandit23 a la variable myname.
+
+$ mytarget=$(echo Soy el usuario $myname | md5sum | cut -d ' ' -f 1)
+
+Explicación: Calcula el hash MD5 de la cadena Soy el usuario bandit23.
+
+$ cat /etc/bandit_pass/$myname > /tmp/$mytarget
+
+Explicación: Copia el archivo de contraseña a un archivo temporal.
+
+$ cat /tmp/$mytarget
+
+Explicación: Muestra el contenido del archivo temporal que contiene la contraseña.

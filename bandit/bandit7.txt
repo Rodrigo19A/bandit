@@ -1,0 +1,8 @@
+Bandit Nivel 7 → Nivel 8
+SSH: ssh -o PubkeyAuthentication=no -p2220 bandit7@bandit.labs.overthewire.org
+
+Explicación: Abre sesión SSH con el usuario bandit7.
+
+Solución: $ grep 'millonésimo' data.txt
+
+Explicación: grep busca y muestra las líneas que contienen la palabra 'millonésimo' en el archivo data.txt

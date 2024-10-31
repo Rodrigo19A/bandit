@@ -1,0 +1,8 @@
+Bandit Nivel 18 → Nivel 19
+SSH: ssh -o PubkeyAuthentication=no -p2220 bandit18@bandit.labs.overthewire.org
+
+Explicación: Abre sesión SSH con el usuario bandit18.
+
+Solución: $ cat /home/bandit18/readme
+
+Explicación: cat se utiliza para mostrar el contenido del archivo readme en el directorio /home/bandit18.

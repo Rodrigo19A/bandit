@@ -1,0 +1,18 @@
+Bandit Nivel 6 → Nivel 7
+SSH: ssh -o PubkeyAuthentication=no -p2220 bandit6@bandit.labs.overthewire.org
+
+Explicación: Abre sesión SSH con el usuario bandit6.
+
+Solución:
+
+$ find / -size 33c -group bandit6 -user bandit7 2>/dev/null
+
+Explicación: find busca archivos en todo el sistema (/) de tamaño 33 bytes (33c) pertenecientes al grupo bandit6 y al usuario bandit7. 2>/dev/null redirige los errores a /dev/null para evitar mostrarlos.
+
+$ ls -l /var/lib/dpkg/info/bandit7.password
+
+Explicación: ls -l lista detalles del archivo bandit7.password.
+
+$ cat /var/lib/dpkg/info/bandit7.password
+
+Explicación: cat muestra el contenido del archivo bandit7.password

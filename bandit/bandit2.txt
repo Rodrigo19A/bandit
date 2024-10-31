@@ -1,0 +1,8 @@
+Bandit Nivel 2 → Nivel 3
+SSH: ssh -o PubkeyAuthentication=no -p2220 bandit2@bandit.labs.overthewire.org
+
+Explicación: Abre sesión SSH con el usuario bandit2.
+
+Solución: $ cat spaces\ in\ this\ filename
+
+Explicación: cat para mostrar el contenido de un archivo cuyo nombre contiene espacios. Los espacios en el nombre se escapan con \.

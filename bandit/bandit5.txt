@@ -1,0 +1,14 @@
+Bandit Nivel 5 → Nivel 6
+SSH: ssh -o PubkeyAuthentication=no -p2220 bandit5@bandit.labs.overthewire.org
+
+Explicación: Abre sesión SSH con el usuario bandit5.
+
+Solución:
+
+$ find . -size 1033c ! -ejecutable
+
+Explicación: find busca archivos en el directorio actual (.) de tamaño 1033 bytes (1033c) que no sean ejecutables (! -ejecutable).
+
+$ cat ./inhere/maybehere07/.file2
+
+Explicación: cat muestra el contenido del archivo encontrado.

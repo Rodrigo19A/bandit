@@ -1,0 +1,8 @@
+Bandit Nivel 11 → Nivel 12
+SSH: ssh -o PubkeyAuthentication=no -p2220 bandit11@bandit.labs.overthewire.org
+
+Explicación: Abre sesión SSH con el usuario bandit11.
+
+Solución: $ cat data.txt | tr a-zA-Z n-za-mN-ZA-M
+
+Explicación: cat muestra el contenido de data.txt y tr a-zA-Z n-za-mN-ZA-M realiza una sustitución ROT13 en el texto, cambiando cada letra por la que está 13 lugares adelante en el alfabeto.

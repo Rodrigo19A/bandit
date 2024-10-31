@@ -1,0 +1,14 @@
+Bandit Nivel 14 → Nivel 15
+SSH: ssh -i sshkey.private bandit14@localhost
+
+Explicación: Similar a antes, utiliza la clave SSH privada para conectar a bandit14.
+
+Solución:
+
+$ telnet localhost 30000
+
+Explicación: telnet se usa para conectarse a localhost en el puerto 30000.
+
+$ cat /etc/bandit_pass/bandit14
+
+Explicación: cat muestra el contenido del archivo bandit14 en /etc/bandit_pass/.

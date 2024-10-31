@@ -1,0 +1,22 @@
+Bandit Nivel 20 → Nivel 21
+SSH: ssh -o PubkeyAuthentication=no -p2220 bandit20@bandit.labs.overthewire.org
+
+Explicación: Abre sesión SSH con el usuario bandit20.
+
+Solución:
+
+$ nc -l -p 4321
+
+Explicación: nc -l -p 4321 abre un puerto y escucha en el puerto 4321 usando nc (netcat).
+
+$ nc localhost 4321
+
+Explicación: nc localhost 4321 se conecta al puerto 4321 en localhost.
+
+$ echo "GbKksEFF4yrVs6il55v6gwY5aVje5f0j" | nc -l -p 4321 &
+
+Explicación: echo envía la contraseña a nc, que escucha en el puerto 4321.
+
+$ ./suconnect 4321
+
+Explicación: Ejecuta suconnect conectándose al puerto 4321.

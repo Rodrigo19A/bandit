@@ -1,0 +1,10 @@
+Bandit Nivel 15 → Nivel 16
+SSH: ssh -o PubkeyAuthentication=no -p2220 bandit15@bandit.labs.overthewire.org
+
+Explicación: Abre sesión SSH con el usuario bandit15.
+
+Solución:
+
+$ echo 'BfMYroe26WYalil77FoDi9qh59eK5xNr' | openssl s_client -quiet -connect localhost:30001
+
+Explicación: echo envía la contraseña a openssl s_client, que se conecta de forma segura a localhost en el puerto 30001.

@@ -1,0 +1,8 @@
+Bandit Nivel 0 → Nivel 1
+SSH: ssh -o PubkeyAuthentication=no -p2220 bandit0@bandit.labs.overthewire.org
+
+Explicación: Esto abre una sesión SSH (Secure Shell) en el servidor especificado (bandit.labs.overthewire.org) en el puerto 2220, con el usuario bandit0.
+
+Solución: $ cat readme
+
+Explicación: cat es un comando para mostrar el contenido de archivos. En este caso, se usa para leer el archivo llamado readme.

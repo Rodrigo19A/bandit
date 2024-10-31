@@ -1,0 +1,18 @@
+Bandit Nivel 13 → Nivel 14
+SSH: ssh -o PubkeyAuthentication=no -p2220 bandit13@bandit.labs.overthewire.org
+
+Explicación: Abre sesión SSH con el usuario bandit13.
+
+Solución:
+
+$ cat sshkey.private
+
+Explicación: cat muestra el contenido del archivo sshkey.private.
+
+$ ssh -i sshkey.private bandit14@localhost
+
+Explicación: ssh -i sshkey.private utiliza la clave SSH privada para conectarse a bandit14 en localhost.
+
+$ cat /etc/bandit_pass/bandit14
+
+Explicación: cat muestra el contenido del archivo bandit14 en /etc/bandit_pass/.

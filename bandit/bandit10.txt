@@ -1,0 +1,8 @@
+Bandit Nivel 10 → Nivel 11
+SSH: ssh -o PubkeyAuthentication=no -p2220 bandit10@bandit.labs.overthewire.org
+
+Explicación: Abre sesión SSH con el usuario bandit10.
+
+Solución: $ cat data.txt | base64 -d
+
+Explicación: cat muestra el contenido de data.txt y base64 -d decodifica el contenido que está en base64.

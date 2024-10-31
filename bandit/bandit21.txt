@@ -1,0 +1,26 @@
+Bandit Nivel 21 → Nivel 22
+SSH: ssh -o PubkeyAuthentication=no -p2220 bandit21@bandit.labs.overthewire.org
+
+Explicación: Abre sesión SSH con el usuario bandit21.
+
+Solución:
+
+$ cd /etc/cron.d/
+
+Explicación: cd cambia el directorio a /etc/cron.d/.
+
+$ ls -l
+
+Explicación: ls -l lista los archivos en el directorio con detalles.
+
+$ cat cronjob_bandit22
+
+Explicación: cat muestra el contenido del archivo cronjob_bandit22.
+
+$ /usr/bin/cronjob_bandit22.sh
+
+Explicación: Ejecuta el script cronjob_bandit22.sh.
+
+$ cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+
+Explicación: cat muestra el contenido del archivo temporal.

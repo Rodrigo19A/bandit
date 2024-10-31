@@ -1,0 +1,8 @@
+Bandit Nivel 8 → Nivel 9
+SSH: ssh -o PubkeyAuthentication=no -p2220 bandit8@bandit.labs.overthewire.org
+
+Explicación: Abre sesión SSH con el usuario bandit8.
+
+Solución: $ sort data.txt | uniq -u
+
+Explicación: sort ordena las líneas en data.txt y uniq -u muestra las únicas líneas que no se repiten

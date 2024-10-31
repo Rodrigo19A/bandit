@@ -1,0 +1,8 @@
+Bandit Nivel 1 → Nivel 2
+SSH: ssh -o PubkeyAuthentication=no -p2220 bandit1@bandit.labs.overthewire.org
+
+Explicación: Similar al comando anterior, este inicia una sesión SSH con el usuario bandit1.
+
+Solución: $ cat /home/bandit1/-
+
+Explicación: Nuevamente, cat se utiliza para mostrar el contenido de un archivo. Aquí, el archivo se encuentra en /home/bandit1/ y tiene un nombre peculiar -.

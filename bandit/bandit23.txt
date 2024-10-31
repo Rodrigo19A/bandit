@@ -1,0 +1,46 @@
+Bandit Nivel 23 → Nivel 24
+SSH: ssh -o PubkeyAuthentication=no -p2220 bandit23@bandit.labs.overthewire.org
+
+Explicación: Abre sesión SSH con el usuario bandit23.
+
+Solución:
+
+$ cd /etc/cron.d/
+
+Explicación: cd cambia al directorio /etc/cron.d/.
+
+$ ls -l
+
+Explicación: ls -l lista archivos en el directorio actual con detalles.
+
+$ cat cronjob_bandit24
+
+Explicación: cat muestra el contenido del archivo cronjob_bandit24.
+
+$ mkdir /tmp/fcchx
+
+Explicación: Crea un directorio temporal fcchx.
+
+$ touch getx.sh
+
+Explicación: Crea un archivo vacío getx.sh.
+
+$ chmod 777 getx.sh
+
+Explicación: Cambia los permisos del archivo getx.sh para que todos los usuarios puedan leer, escribir y ejecutar.
+
+$ vim getx.sh
+
+Explicación: Abre el archivo getx.sh en el editor vim.
+
+$ ls -la getx.sh
+
+Explicación: Muestra los detalles del archivo getx.sh.
+
+$ cp getx.sh /var/spool/bandit24/
+
+Explicación: Copia el script getx.sh al directorio /var/spool/bandit24/ para ser ejecutado por el cron job.
+
+$ cat /tmp/fcchx/password
+
+Explicación: Muestra el contenido del archivo password.

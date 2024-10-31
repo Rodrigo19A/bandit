@@ -1,0 +1,8 @@
+Bandit Nivel 9 → Nivel 10
+SSH: ssh -o PubkeyAuthentication=no -p2220 bandit9@bandit.labs.overthewire.org
+
+Explicación: Abre sesión SSH con el usuario bandit9.
+
+Solución: $ strings data.txt | grep '='
+
+Explicación: strings muestra todas las cadenas imprimibles en data.txt y grep '=' filtra las que contienen el símbolo =.

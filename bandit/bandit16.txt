@@ -1,0 +1,14 @@
+Bandit Nivel 16 → Nivel 17
+SSH: ssh -o PubkeyAuthentication=no -p2220 bandit16@bandit.labs.overthewire.org
+
+Explicación: Abre sesión SSH con el usuario bandit16.
+
+Solución:
+
+$ nmap -sT localhost -p 31000-32000
+
+Explicación: nmap -sT escanea los puertos de localhost entre 31000 y 32000 para encontrar puertos abiertos.
+
+$ echo fcch | nc localhost 31046
+
+Explicación: echo envía un mensaje a nc (netcat), que conecta a localhost en el puerto 31046.

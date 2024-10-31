@@ -1,0 +1,18 @@
+Bandit Nivel 3 → Nivel 4
+SSH: ssh -o PubkeyAuthentication=no -p2220 bandit3@bandit.labs.overthewire.org
+
+Explicación: Abre sesión SSH con el usuario bandit3.
+
+Solución:
+
+$ cd inhere/
+
+Explicación: cd cambia el directorio a inhere/.
+
+$ ls -la
+
+Explicación: ls -la lista todos los archivos en el directorio incluyendo los ocultos con detalles.
+
+$ cat .hidden
+
+Explicación: cat se utiliza para mostrar el contenido de un archivo oculto llamado .hidden.

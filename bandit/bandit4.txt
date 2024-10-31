@@ -1,0 +1,22 @@
+Bandit Nivel 4 → Nivel 5
+SSH: ssh -o PubkeyAuthentication=no -p2220 bandit4@bandit.labs.overthewire.org
+
+Explicación: Abre sesión SSH con el usuario bandit4.
+
+Solución:
+
+$ cd inhere/
+
+Explicación: cd cambia el directorio a inhere/.
+
+$ ls -la
+
+Explicación: ls -la lista todos los archivos en el directorio incluyendo los ocultos con detalles.
+
+$ file /home/bandit4/inhere/-*
+
+Explicación: file se usa para determinar el tipo de archivo y /home/bandit4/inhere/-* especifica archivos cuyo nombre empieza con -.
+
+$ cat /home/bandit4/inhere/-file07
+
+Explicación: cat muestra el contenido del archivo -file07.

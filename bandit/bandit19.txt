@@ -1,0 +1,38 @@
+Bandit Nivel 19 → Nivel 20
+SSH: ssh -o PubkeyAuthentication=no -p2220 bandit19@bandit.labs.overthewire.org
+
+Explicación: Abre sesión SSH con el usuario bandit19.
+
+Solución:
+
+$ ls -l
+
+Explicación: ls -l lista los archivos en el directorio actual con detalles.
+
+$ file bandit20-do
+
+Explicación: file determina el tipo de archivo bandit20-do.
+
+$ ./bandit20-do
+
+Explicación: ./bandit20-do ejecuta el archivo bandit20-do.
+
+$ ./bandit20-do --help
+
+Explicación: ./bandit20-do --help muestra la ayuda del comando bandit20-do.
+
+$ find / -user bandit20 2>/dev/null
+
+Explicación: find / busca archivos en todo el sistema que pertenezcan al usuario bandit20, redirigiendo errores a /dev/null.
+
+$ cat /etc/dpkg/.info20.txt
+
+Explicación: cat muestra el contenido del archivo .info20.txt.
+
+$ ./bandit20-do cat /etc/dpkg/.info20.txt
+
+Explicación: Ejecuta bandit20-do para mostrar el contenido de .info20.txt.
+
+$ cat /etc/bandit_pass/bandit20
+
+Explicación: cat muestra el contenido del archivo bandit20 en /etc/bandit_pass/.

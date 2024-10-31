@@ -1,0 +1,38 @@
+Bandit Nivel 12 → Nivel 13
+SSH: ssh -o PubkeyAuthentication=no -p2220 bandit12@bandit.labs.overthewire.org
+
+Explicación: Abre sesión SSH con el usuario bandit12.
+
+Solución:
+
+$ mkdir /tmp/fcch
+
+Explicación: mkdir crea un directorio llamado /tmp/fcch.
+
+$ cp data.txt /tmp/fcch/data.raw
+
+Explicación: cp copia data.txt a /tmp/fcch/data.raw.
+
+$ cd /tmp/fcch/
+
+Explicación: cd cambia el directorio a /tmp/fcch/.
+
+$ xxd -r data.raw > data1
+
+Explicación: xxd -r convierte el archivo data.raw de texto hexadecimal a binario, guardándolo como data1.
+
+$ file data1
+
+Explicación: file determina el tipo de archivo para data1.
+
+$ gzip -cd data1 > data2
+
+Explicación: gzip -cd descomprime data1 y guarda el contenido descomprimido en data2.
+
+$ bzip2 -d data2
+
+Explicación: bzip2 -d descomprime data2 que estaba comprimido con bzip2.
+
+$ tar -xvf data2
+
+Explicación: tar -xvf extrae el contenido de data2.

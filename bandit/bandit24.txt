@@ -1,0 +1,30 @@
+Bandit Nivel 24 → Nivel 25
+SSH: ssh -o PubkeyAuthentication=no -p2220 bandit24@bandit.labs.overthewire.org
+
+Explicación: Abre sesión SSH con el usuario bandit24.
+
+Solución:
+
+$ cd /tmp
+
+Explicación: Cambia el directorio a /tmp.
+
+$ mkdir password-fcch25
+
+Explicación: Crea un directorio temporal password-fcch25.
+
+$ cd password-fcch25
+
+Explicación: Cambia el directorio a password-fcch25.
+
+$ touch genpass.sh
+
+Explicación: Crea un archivo vacío genpass.sh.
+
+$ vim genpass.sh
+
+Explicación: Abre el archivo genpass.sh en el editor vim.
+
+$ cat pass25.txt | nc localhost 30001
+
+Explicación: Envía el contenido de pass25.txt a netcat en localhost en el puerto 30001.

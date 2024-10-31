@@ -1,0 +1,51 @@
+Bandit Nivel 25 → Nivel 26
+SSH: ssh -o PubkeyAuthentication=no -p2220 bandit25@bandit.labs.overthewire.org
+
+Explicación: Abre sesión SSH con el usuario bandit25.
+
+Solución:
+
+$ file bandit26.sshkey
+
+Explicación: file determina el tipo del archivo bandit26.sshkey.
+
+$ ssh -i bandit26.sshkey bandit26@localhost
+
+Explicación: ssh -i bandit26.sshkey utiliza la clave SSH privada para conectarse a bandit26 en localhost.
+
+$ cat /etc/passwd
+
+Explicación: cat muestra el contenido del archivo /etc/passwd.
+
+$ cat /etc/passwd | grep bandit26
+
+Explicación: cat muestra el contenido del archivo /etc/passwd y grep bandit26 filtra las líneas que contienen bandit26.
+
+$ cat /usr/bin/showtext
+
+Explicación: cat muestra el contenido del archivo showtext.
+
+Contenido del archivo:
+
+sh
+#!/bin/sh
+export TERM=linux
+more ~/text.txt
+exit 0
+Explicación del contenido: El script establece el terminal en modo Linux y usa more para mostrar el contenido de ~/text.txt, luego sale.
+
+$ ssh -i bandit26.sshkey bandit26@localhost
+
+Explicación: Abre una sesión SSH con bandit26.
+
+Interacción:
+
+En la pantalla de more, se puede ingresar h para abrir la ayuda de more.
+
+Luego, presionar v para abrir el editor vi.
+
+Dentro de vi, ingresar :set shell=/bin/bash y luego :shell para abrir una shell.
+
+$ cat /etc/bandit_pass/bandit26
+
+Explicación: cat muestra el contenido del archivo de contraseña de bandit26.
